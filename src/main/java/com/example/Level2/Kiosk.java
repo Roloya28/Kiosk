@@ -1,4 +1,4 @@
-package com.example.Level1;
+package com.example.Level2;
 
 import java.util.Scanner;
 
@@ -28,11 +28,11 @@ public class Kiosk {
             }
 
             try {
-                int choose = Integer.parseInt(input);
-                if (choose > 0 && choose <= menuItems.length) {
-                    String name = menuItems[choose = 1][0];
-                    double price = Double.parseDouble(menuItems[choose - 1][1]);
-                    String description = menuItems[choose = 1][2];
+                int choice = Integer.parseInt(input);
+                if (choice > 0 && choice <= menuItems.length) {
+                    String name = menuItems[choice = 1][0];
+                    double price = Double.parseDouble(menuItems[choice - 1][1]);
+                    String description = menuItems[choice = 1][2];
                     System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", name, price, description);
                 } else {
                     System.out.println("유효하지 않은 메뉴 번호입니다. 다시 선택해주세요. \n");
