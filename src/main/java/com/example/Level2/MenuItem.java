@@ -21,7 +21,7 @@ public class MenuItem {
         return price;
     }
 
-    public String getPriceInfo() {
+    public String getProductInfo() {
         return productInfo;
     }
 }

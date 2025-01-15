@@ -20,7 +20,7 @@ public class Main {
             System.out.println("[ SHAKESHACK MENU ]");
             for (int i = 0; i < menuItems.size(); i++) {
                 MenuItem item = menuItems.get(i);
-                System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getPriceInfo());
+                System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
             }
             System.out.println("0. 종료       | 종료");
 
@@ -35,7 +35,7 @@ public class Main {
                     break;
                 } else if (choice > 0 && choice <= menuItems.size()) {
                     MenuItem selectedItem = menuItems.get(choice - 1);
-                    System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getPriceInfo());
+                    System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getProductInfo());
                 } else {
                     System.out.println("유효하지 않은 메뉴 번호입니다. 다시 입력해주세요");
                 }
