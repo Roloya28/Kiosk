@@ -2,9 +2,9 @@ package com.example.Level3;
 
 public class MenuItem {
 
-    private String name;
-    private double price;
-    private String productInfo;
+    private final String name;
+    private final double price;
+    private final String productInfo;
 
 
     public MenuItem(String name, double price, String productInfo) {

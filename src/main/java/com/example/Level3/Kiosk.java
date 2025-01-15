@@ -1,12 +1,13 @@
 package com.example.Level3;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
-    private List menuItem;
+    private final List menuItem;
 
-    public Kiosk(List<MenuItem> menuItem) {
+    public Kiosk(ArrayList<Object> menuItem) {
         this.menuItem = menuItem;
     }
 
