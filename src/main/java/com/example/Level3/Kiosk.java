@@ -7,13 +7,15 @@ import java.util.Scanner;
 public class Kiosk {
     private final List menuItem;
 
-    public Kiosk(ArrayList<Object> menuItem) {
+    public Kiosk(ArrayList<MenuItem> menuItem) {
         this.menuItem = menuItem;
     }
 
+    // 스타트 메서드로 키오스크 프로그램의 메인 로직을 실행
     public void start() {
         Scanner sc = new Scanner(System.in);
 
+        // 반복문 while 을 이용한 리스트에 메뉴를 차례대로 출력 (앞에 번호 부여 및 출력시 상품명, 가격, 제품설명 출력)
         while (true) {
             // 메뉴 출력
             System.out.println("[ SHAKESHACK MENU ]");
