@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        // 메뉴별로 초기화 진행
         Menu burgers = new Menu("Burgers"); // 버거 메뉴 초기화
         burgers.addMenuItem(new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거"));
         burgers.addMenuItem(new MenuItem("SmokeShack", 8.9, "베이컨, 체리 페퍼에 쉑솟브가 토핑된 치즈버거"));
@@ -20,11 +22,13 @@ public class Main {
         desserts.addMenuItem(new MenuItem("Ice Cream", 3.5, "바닐라 이이스크림"));
         desserts.addMenuItem(new MenuItem("Brownie", 4.0, "진한 초콜릿 브라우니"));
 
+        // 전체 메뉴로 묶음
         List<Menu> allMenu = new ArrayList<>();
         allMenu.add(burgers);
         allMenu.add(drinks);
         allMenu.add(desserts);
 
+        // 키오스크 객체 생성 및 실행 , 프로그램 시작
         Kiosk kiosk = new Kiosk(allMenu);
         kiosk.start();
     }
