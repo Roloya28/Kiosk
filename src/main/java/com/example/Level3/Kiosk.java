@@ -21,7 +21,7 @@ public class Kiosk {
             System.out.println("[ SHAKESHACK MENU ]");
             for (int i = 0; i < menuItem.size(); i++) {
                 MenuItem item = (MenuItem) menuItem.get(i);
-                System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
+                System.out.printf("%d. %-13s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
             }
             System.out.println("0. 종료          | 종료");
 

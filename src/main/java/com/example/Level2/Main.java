@@ -23,7 +23,7 @@ public class Main {
             System.out.println("[ SHAKESHACK MENU ]");
             for (int i = 0; i < menuItems.size(); i++) {
                 MenuItem item = menuItems.get(i);
-                System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
+                System.out.printf("%d. %-13s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
             }
             System.out.println("0. 종료       | 종료");
 

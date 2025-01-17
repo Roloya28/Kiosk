@@ -38,7 +38,7 @@ public class Menu {
         for (int i = 0; i < menuItems.size(); i++) { /* 번호 부여 */
             MenuItem item = (MenuItem) menuItems.get(i);
             /* 번호, 음식이름, 가격, 상품정보 차례대로 출력 */
-            System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
+            System.out.printf("%d. %-13s | W %.1f | %s\n", i + 1, item.getName(), item.getPrice(), item.getProductInfo());
         }
         System.out.println("0. 뒤로가기");
     }

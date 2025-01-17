@@ -23,7 +23,7 @@ public class Kiosk {
 
             // 메뉴 앞에 번호 부여 및 이름, 가격, 상품 설명 출력
             for (int i = 0; i < menuItems.length; i++) {
-                System.out.printf("%d. %-15s | W %.1f | %s\n", i + 1, menuItems[i][0], Double.parseDouble(menuItems[i][1]), menuItems[i][2]);
+                System.out.printf("%d. %-13s | W %.1f | %s\n", i + 1, menuItems[i][0], Double.parseDouble(menuItems[i][1]), menuItems[i][2]);
             }
             System.out.println("0. 종료         | 종료");
             System.out.println("메뉴를 선택하세요: ");
@@ -42,7 +42,7 @@ public class Kiosk {
                 if (choose > 0 && choose <= menuItems.length) { // 유효한 번호를 입력했을경우 선택한 메뉴 출력 ()
                     String name = menuItems[choose = 1][0];
                     double price = Double.parseDouble(menuItems[choose - 1][1]);
-                    String description = menuItems[choose = 1][2];
+                    String description = menuItems[1][2];
                     System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", name, price, description);
                 } else { // 1~menuItems.length 를 초과한 번호 입력시 오류 메세지 출력
                     System.out.println("유효하지 않은 메뉴 번호입니다. 다시 선택해주세요. \n");
