@@ -50,10 +50,10 @@ public class Kiosk {
                     // 선택한 메뉴 출력
                     Menu selectedMenu = menus.get(choice - 1);
                     menuSelection(sc, selectedMenu);
-                } else { // 메뉴 번호가 범위를 벗어난 경우
+                } else { /* 메뉴 번호가 범위를 벗어난 경우 */
                     System.out.println("유효하지 않은 선택입니다. 다시 입력해주세요.");
                 }
-            } catch (NumberFormatException e) { // 입력값이 숫자가 아닌 경우
+            } catch (NumberFormatException e) { /* 입력값이 숫자가 아닌 경우 */
                 System.out.println("잘못된 입력입니다. 숫자를 입력해주세요.");
             }
         }
@@ -76,16 +76,16 @@ public class Kiosk {
 
             // 입력 처리
             try {
-                int choice = Integer.parseInt(input); // 입력 값을 정수로 변환
+                int choice = Integer.parseInt(input); /* 입력 값을 정수로 변환 */
                 List<MenuItem> items = selectedMenu.getMenuItems();
-                if (choice > 0 && choice <= items.size()) { // 입력한 값이 유효한 범위 내에 있는지 확인하고
-                    MenuItem selectedItem = items.get(choice - 1); // 값이 맞다면 해당 번호에 맞는 메뉴를 출력 (items 리스트에서 -1 번째 항목을 가져옴 - 인덱스 0 데이터)
+                if (choice > 0 && choice <= items.size()) { /* 입력한 값이 유효한 범위 내에 있는지 확인하고 */
+                    MenuItem selectedItem = items.get(choice - 1); /* 값이 맞다면 해당 번호에 맞는 메뉴를 출력 (items 리스트에서 -1 번째 항목을 가져옴 - 인덱스 0 데이터) */
                     System.out.printf("선택한 메뉴: %s | W %.1f | %s\n", selectedItem.getName(), selectedItem.getPrice(), selectedItem.getProductInfo());
-                return; // 해당 메서드 종료
-                } else { // 메뉴 번호가 범위를 벗어난 경우
+                return; /* 해당 메서드 종료 */
+                } else { /* 메뉴 번호가 범위를 벗어난 경우 */
                     System.out.println("유효하지 않은 선택입니다. 다시 입력해주세요.");
                 }
-            } catch (NumberFormatException e) { // 입력값이 숫자가 아닌 경우
+            } catch (NumberFormatException e) { /* 입력값이 숫자가 아닌 경우 */
                 System.out.println("잘못된 입력입니다. 숫자를 입력해주세요.");
             }
         }

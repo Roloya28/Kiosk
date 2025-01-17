@@ -37,5 +37,4 @@ public class MenuItem {
     public void setProductInfo(String productInfo) {
         this.productInfo = productInfo;
     }
-
 }
