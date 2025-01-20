@@ -59,7 +59,8 @@
 
 - 햄버거 메뉴 출력 및 선택하기
 
-▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/blob/master/src/main/java/com/example/Level1/Kiosk.java
+▶ 작성 코드 바로가기 - <br />
+https://github.com/Roloya28/Kiosk/blob/master/src/main/java/com/example/Level1/Kiosk.java
 
 <br />
 
@@ -68,7 +69,8 @@
 - MenuItem 객체 생성 후, 유효값 세팅 및 List 선언으로 여러 MenuItem 을 추가
 - 반목문을 활용해 menuItems 를 탐색하면서 하나씩 접근
 
-▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level2
+▶ 작성 코드 바로가기 - <br />
+https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level2
    
 <br />
 
@@ -79,7 +81,8 @@
   └ 'main' 함수에ㅓ 관리하던 입력과 반복문 로직은 이제 'start' 함수를 만들어 관리
   └ 'List<MenuItem> menuItems 는 'Kiosk' 클래스 생성자를 통해 값을 할당한다.
 
-▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level3
+▶ 작성 코드 바로가기 - <br />
+https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level3
    
 <br />
 
@@ -88,7 +91,8 @@
 - List<MenuItem>은 'Kiosk' 클래스가 관리하기에 적절하지 않으므로 Menu 클래스가 관리하도록 변경
 - 여러 버거들을 포함하는 상위 개념 '버거' 같은 '카테고리 이름' 필드를 갖는다.
 
-▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level4and5
+▶ 작성 코드 바로가기 - <br />
+https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level4and5
    
 <br />
 
@@ -101,12 +105,10 @@
 
 **마치며**
 
- Java 강의 수강과 함께 병행된 이번 프로젝트에선, Java라는 언어가 결코 만만한하지 않다는걸 뼈저리게 
- 
- 느끼는 시간이었다. 처음 배워서 그런지, 경악스러울만큼 모든 부분에서 이해가 가지 않아, 
- 
- 들었던 강의를 몇번씩 다시 들어보고, 예문 자료를 찾아보고 이해하느라 진행 또한 느렸지만,
- 
- 조금씩 코드를 작성하며, 해당 코드가 작동되는 모습에서 낯선 즐거움을 느끼고있는 자신을 발견했다.
- 
- 이렇게 차근차근 나아가다보면 나도 어엿한 한명의 개발자가 될수 있을까?
+이번에 진행한 'Kiosk 만들기' 과제는 지난번 '계산기 만들기' 과제보다는 순탄하게 진행이 되었다.
+
+하지만 중간중간 문법을 잘못 작성하여 꼬인 코드를 찾아내는데 한세월을 소비하는 자신을 볼때는 아직
+
+기본이 많이 부족하다는점을 느낀다. 다음 과제 전까지 꾸준히 기본기를 탄탄히 쌓아 
+
+초보적인 실수를 줄이는데 중점을 두도록 해보자.
