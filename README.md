@@ -59,28 +59,43 @@
 
 - 햄버거 메뉴 출력 및 선택하기
 
-▶ 출력 <br />
-   [![401807470-b6714ef5-354e-4173-9e14-6a58e2713af8.png](https://github.com/Roloya28/Calculator/blob/master/401807470-b6714ef5-354e-4173-9e14-6a58e2713af8.png)](https://github.com/Roloya28/Calculator/blob/master/401807470-b6714ef5-354e-4173-9e14-6a58e2713af8.png)
+▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/blob/master/src/main/java/com/example/Level1/Kiosk.java
 
 <br />
-
-▶ 결과물 코드 바로가기 <br />
-- ??????
 
 **키오스크 - LV2**
 
 - MenuItem 객체 생성 후, 유효값 세팅 및 List 선언으로 여러 MenuItem 을 추가
 - 반목문을 활용해 menuItems 를 탐색하면서 하나씩 접근
 
-▶ 작성 코드 바로가기
+▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level2
    
 <br />
 
-------- 여기까지 작성 -------
+**키오스크 - LV3**
+
+- 'Kiosk' 클래스 생성하기
+  └ 'MenuItem'을 관리하는 리스트가 필드로 존재한다.
+  └ 'main' 함수에ㅓ 관리하던 입력과 반복문 로직은 이제 'start' 함수를 만들어 관리
+  └ 'List<MenuItem> menuItems 는 'Kiosk' 클래스 생성자를 통해 값을 할당한다.
+
+▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level3
+   
+<br />
+
+**키오스크 - LV4 ~ 5**
+
+- List<MenuItem>은 'Kiosk' 클래스가 관리하기에 적절하지 않으므로 Menu 클래스가 관리하도록 변경
+- 여러 버거들을 포함하는 상위 개념 '버거' 같은 '카테고리 이름' 필드를 갖는다.
+
+▶ 작성 코드 바로가기 - https://github.com/Roloya28/Kiosk/tree/master/src/main/java/com/example/Level4and5
+   
+<br />
+
 
 **참조자료**
 
-- Java 문법 종합반 1~3주차 강의
+- Java 문법 종합반 강의, '계산기 만들기' 과제
 
 <br />
 
